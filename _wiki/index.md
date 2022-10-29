@@ -10,7 +10,11 @@ regenerate: true
 ## wiki items
 
 * [[mathjax-latex]]
-[[할-일-목록]]
+* [[할-일-목록]]
+* [[autocmd테스트]]
+* [[autocmd테스트2]]
+* [[autocmd테스트3]]
+* [[테스트4]]
 
 ---
 
