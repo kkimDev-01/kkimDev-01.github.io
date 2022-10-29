@@ -1,10 +1,10 @@
 ---
 layout  : wiki
-title   : MathJax로 LaTeX 사용하기
+title   : 테스트4-2
 summary :
 date    : 2017-11-28 22:56:29 +0900
-updated : 2022-10-30 00:32:18 +0900
-tag     : latex
+updated : 2022-10-30 02:44:47 +0900
+tag     : 테스트4
 toc     : true
 public  : true
 parent  : [[테스트4]]
@@ -14,4 +14,4 @@ latex   : true
 
 ## 테스트입니다
 
-테스트입니다
+테스트
