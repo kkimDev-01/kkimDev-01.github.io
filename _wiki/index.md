@@ -22,6 +22,7 @@ regenerate: true
         * [[quick-sort]]
 		* [[insertion-sort]]
 		* [[비트연산]]
+		* [[dual-pivot-quick-sort]]
 
 ---
 

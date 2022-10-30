@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: quick-sort
+title: insertion-sort
 summary:
 date: 2022-10-30 00:00:00 +0900
 updated: 2022-10-30 00:00:00 +0900
