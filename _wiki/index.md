@@ -21,6 +21,7 @@ regenerate: true
     * [[1427번:소프트인사이드]]
         * [[quick-sort]]
 		* [[insertion-sort]]
+		* [[비트연산]]
 
 ---
 
