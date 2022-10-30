@@ -20,6 +20,7 @@ regenerate: true
 * [[BOJ]]
     * [[1427번:소프트인사이드]]
         * [[quick-sort]]
+		* [[insertion-sort]]
 
 ---
 
