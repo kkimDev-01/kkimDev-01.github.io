@@ -1,9 +1,9 @@
 ---
-layout  : wikiindex
-title   : wiki
-toc     : true
-public  : true
-comment : false
+layout: wikiindex
+title: wiki
+toc: true
+public: true
+comment: false
 regenerate: true
 ---
 
@@ -17,10 +17,14 @@ regenerate: true
 * [[테스트4]]
     * [[테스트4-1]] 
     * [[테스트4-2]]
+* [[BOJ]]
+    * [[1427번:소프트인사이드]]
+        * [[quick-sort]]
 
 ---
 
 ## blog posts
+
 <div>
     <ul>
 {% for post in site.posts %}
@@ -34,4 +38,3 @@ regenerate: true
 {% endfor %}
     </ul>
 </div>
-
