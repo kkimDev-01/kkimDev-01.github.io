@@ -26,7 +26,7 @@ latex: true
   - 편집할 수 있는 곳이 로딩됨 : 크론탭을 설정
   - 각종 크론탭 명령어를 입력후 ":wq"로 저장+종료하여 크론탭을 갱신
   - 예시
-    - - - - - - ls -al
+    - \* \* \* \* \* ls -al
     - 매분마다 ls -al 명령을 실행
   1. crontab -l
   - 현재 크론탭의 내용 확인
@@ -38,7 +38,7 @@ latex: true
 
   1. 매분 실행
 
-  - - - - - - /home/script/test.sh
+  - \* \* \* \* \* /home/script/test.sh
   - 매분 test.sh 실행
 
   2. 특정 시간 실행
@@ -58,12 +58,12 @@ latex: true
 
   5. 간격 실행
 
-  - _/10 _ \* \* \* /home/script/test.sh
+  - \*/10 \* \* \* \* /home/script/test.sh
   - 매 10분마다 test.sh 를 실행
 
   6. 조금 복잡하기 실행
 
-  - _/10 2,3,4 5-6 _ \* /home/script/test.sh
+  - \*/10 2,3,4 5-6 \* \* /home/script/test.sh
   - 5일에서 6일까지 2시,3시,4시에 매 10분마다 test.sh 를 실행
 
 - 크론 사용 팁
@@ -71,9 +71,9 @@ latex: true
   1. 한 줄에 하나의 명령만 쓴다.
 
   - 좋은 예
-    - - - - 5 5 /home/script/test.sh
+    - \* \* \* 5 5 /home/script/test.sh
   - 안좋은 예
-    - - - - 5 5
+    - \* \* \* 5 5
     - /home/script/test.sh
 
   2. 주석을 단다.
@@ -83,14 +83,14 @@ latex: true
 - 크론 로깅
 
   - 크론탭으로 인한 정기적인 작업의 처리 내역에 대해서 로그를 남기고 싶을 때
-  - - - - - - /home/script/test.sh > /home/script/test.sh.log 2>&1
-    * 매분마다 test.sh.log 파일이 갱신되어 작업 내용이 어떻게 처리되었는지 알 수 있다.
-    * 2>&1를 제거하면 쉘스트립트에서 표준 출력 내용만 나옴 ([[리눅스 특수문자 정리]] 글을 참고)
-  - - - - - - /home/script/test.sh >> /home/script/test.sh.log 2>&1
-    * > 는 하나의 로그파일을 업데이트(갱신), >>는 추가 생성
-    * 계속 로그가 누적됨
-  - - - - - - /home/script/test.sh > /dev/null 2>&1
-    * 로그가 필요없는 크론의 경우
+  - \* \* \* \* \* /home/script/test.sh > /home/script/test.sh.log 2>&1
+    - 매분마다 test.sh.log 파일이 갱신되어 작업 내용이 어떻게 처리되었는지 알 수 있다.
+    - 2>&1를 제거하면 쉘스트립트에서 표준 출력 내용만 나옴 ([[리눅스 특수문자 정리]] 글을 참고)
+  - \* \* \* \* \* /home/script/test.sh >> /home/script/test.sh.log 2>&1
+    - > 는 하나의 로그파일을 업데이트(갱신), >>는 추가 생성
+    - 계속 로그가 누적됨
+  - \* \* \* \* \* /home/script/test.sh > /dev/null 2>&1
+    - 로그가 필요없는 크론의 경우
   - 로그가 과도하게 쌓이면 리눅스 퍼포먼스에 영향을 주므로, 가끔씩 비워주거나 파일을 새로 만들어주어야 함
 
 - 크론탭 백업
