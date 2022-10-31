@@ -23,6 +23,10 @@ regenerate: true
 		* [[insertion-sort]]
 		* [[비트연산]]
 		* [[dual-pivot-quick-sort]]
+* [[Linux]]
+    * [[Crontab]]
+	* [[리눅스_특수문자_정리]]
+
 
 ---
 
