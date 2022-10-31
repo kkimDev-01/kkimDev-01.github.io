@@ -20,6 +20,10 @@ regenerate: true
 * [[Linux]]
   * [[Crontab]]
   * [[리눅스_특수문자_정리]]
+* [[WhiteShip]]
+  * [[Inversion_of_Control]]
+  * [[IoC_컨테이너]]
+
 
 ---
 
