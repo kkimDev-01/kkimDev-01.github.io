@@ -74,3 +74,5 @@ class AAAABBBB {
 ## AOP 적용 예제
 
 ### @LogExecutionTime 으로 메소드 처리 시간 로깅하기
+
+- https://github.com/kkimDev-01/spring-petclinic/commit/3fab961c1a544fc79485309d0d98770b77887933
