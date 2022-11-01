@@ -17,6 +17,8 @@ regenerate: true
     * [[비트연산]]
     * [[dual-pivot-quick-sort]]
     * [[Scanner_vs_BufferedReader]]
+  * [[11650]]
+    * [[Arrays.sort()의_Comparator를_람다식으로_구현]]
 * [[Linux]]
   * [[Crontab]]
   * [[리눅스_특수문자_정리]]
