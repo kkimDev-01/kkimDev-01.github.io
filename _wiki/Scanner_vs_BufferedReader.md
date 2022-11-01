@@ -2,8 +2,8 @@
 layout: wiki
 title: Scanner_vs_BufferedReader
 summary:
-date: 2022-- 00:00:00 +0900
-updated: 2022-- 00:00:00 +0900
+date: 2022-10-31 00:00:00 +0900
+updated: 2022-10-31 00:00:00 +0900
 tag:
 toc: true
 public: true
