@@ -25,7 +25,9 @@ regenerate: true
 * [[WhiteShip]]
   * [[Inversion_of_Control]]
   * [[IoC_컨테이너]]
-
+  * [[빈(Bean)]]
+  * [[의존성_주입(Dependency_Injection)]]
+  * [[AOP_소개]]
 
 ---
 
