@@ -14,6 +14,7 @@ latex: true
 ## 참고문헌
 
 - [Java - Call by Value vs Call by Reference](https://gwang920.github.io/java/CallbyValue-CallbyReference/)
+- [Java 의 Call by Value, Call by Reference](https://bcp0109.tistory.com/360)
 
 ## 결론 : JAVA는 항상 Call by Value
 
