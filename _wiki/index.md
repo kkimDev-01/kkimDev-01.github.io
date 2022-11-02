@@ -19,6 +19,11 @@ regenerate: true
     * [[Scanner_vs_BufferedReader]]
   * [[11650]]
     * [[Arrays.sort()의_Comparator를_람다식으로_구현]]
+  * [[10872]]
+    * [[재귀]]
+  * [[24060]]
+    * [[병합정렬]]
+	* [[Call_by_Value_VS_Call_by_Reference]]
 * [[Linux]]
   * [[Crontab]]
   * [[리눅스_특수문자_정리]]
@@ -28,6 +33,7 @@ regenerate: true
   * [[빈(Bean)]]
   * [[의존성_주입(Dependency_Injection)]]
   * [[AOP_소개]]
+  * [[PSA_소개]]
 
 ---
 
