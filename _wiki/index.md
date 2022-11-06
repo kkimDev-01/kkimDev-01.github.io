@@ -28,6 +28,7 @@ regenerate: true
     * [[Collections.sort()에 대해]]
 	* [[Tim Sort]]
 	* [[Collections.binarySearch()에 대해]]
+	* [[Comparable 과 Comparator의 이해]]
 * [[Linux]]
   * [[Crontab]]
   * [[리눅스_특수문자_정리]]
