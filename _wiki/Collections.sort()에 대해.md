@@ -17,13 +17,13 @@ latex: true
 
 ## 개요 : java.util.Collections.sort()
 
-- Timsort를 사용한다 : [[Tim Sort]]]
+- Timsort를 사용한다 : [[Tim Sort]]
 - 평균 O(n log2(n))이고, 최악의 경우에도 O(n log2(n))이다.
 - Arrays.sort()와 비교
   - Arrays.sort()는 dual pivot quick sort이며, 최악의 경우 평균 O(n log2(n))이고, 최악의 경우에는 O(n^2)이다.
   - Arrays.sort()는 array에만 쓸 수 있다.
   - Collections.sort는 Array, List, linkedList, queue 등에도 쓸 수 있다.
-  - Arrays.sort()는 primitive Type의 정렬 쓰이지만, Collections.sort()는 Object형의 정렬에도 쓸 수 있다 (comparator 구현해서)
+  - Arrays.sort()는 primitive Type의 정렬 쓰이지만, Collections.sort()는 Object형의 정렬에도 쓸 수 있다 (comparator 구현해서) : [[Comparable 과 Comparator의 이해]]
 
 ## 사용법
 
