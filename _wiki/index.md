@@ -50,5 +50,5 @@ regenerate: true
   	* [[IoC 컨테이너 5부 - 빈의 스코프]]
   	* [[IoC 컨테이너 6부 - Environment 1부. 프로파일]]
   	* [[IoC 컨테이너 6부 - Environment 2부. 프로퍼티]]
-
+    * [[IoC 컨테이너 7부 - MessageSource]]
 ---
