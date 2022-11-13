@@ -51,4 +51,8 @@ regenerate: true
   	* [[IoC 컨테이너 6부 - Environment 1부. 프로파일]]
   	* [[IoC 컨테이너 6부 - Environment 2부. 프로퍼티]]
     * [[IoC 컨테이너 7부 - MessageSource]]
+    * [[IoC 컨테이너 8부 - ApplicationEventPublisher]]
+    * [[IoC 컨테이너 9부 - ResourceLoader]]
+    * [[Resource 추상화]]
 ---
+
