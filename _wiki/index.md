@@ -32,6 +32,7 @@ regenerate: true
 * [[SQL]]
   * [[ROW_NUMBER() OVER(PARTITION BY ~ ORDER BY ~) 구문]]
   * [[Temporary Table]]
+  * [[JDBC Batch Update에 대해]]
 * [[Linux]]
   * [[Crontab]]
   * [[리눅스_특수문자_정리]]
@@ -59,5 +60,7 @@ regenerate: true
     * [[데이터 바인딩 추상화 - PropertyEditor]]
     * [[데이터 바인딩 추상화 - Converter와 Formatter]]
     * [[SpEL (스프링 Expression Language)]]
+    * [[스프링 AOP - 개념 소개]]
+    * [[스프링 AOP - 프록시 기반 AOP]]
 ---
 
