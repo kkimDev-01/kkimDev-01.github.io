@@ -40,3 +40,107 @@ latex: true
 - 스프링 IoC: 기존 빈을 대체하는 동적 프록시 빈을 만들어 등록 시켜준다.
   - 클라이언트 코드 변경 없음.
   - AbstractAutoProxyCreator implements BeanPostProcessor
+
+
+
+# 예시
+
+### EventService.java
+```java
+public interface EventService {
+   void createEvent();
+   void publishEvent();
+
+}
+
+```
+
+### SimpleEventService.java
+```java
+@Service
+public class SimpleEventService {
+
+   @Override
+   public void createEvent() {
+      try {
+         Thread.sleep(1000);
+      } catch (InterruptedException e) {
+         e.printStackTrace();
+      }
+
+      System.out.println("Created an event");
+   }
+
+   @Override
+   public void publishEvent() {
+      try{
+         Thread.sleep(2000);
+      } catch (InterruptedException e) {
+         System.out.println("Published an event");
+      }
+   
+   }
+
+}
+
+
+```
+### AppRunner.java
+```java
+public class AppRunner implements ApplicationRunner {
+   @Autowired
+   EventService eventService;
+
+   @Override
+   public void run(ApplicationArguments args) throws Exception {
+      eventService.createEvent(); //primary로 설정된 빈을 가져다 쓰게 됨
+      eventService.publishEvent(); //primary로 설정된 빈을 가져다 쓰게 됨
+
+
+   }
+}
+
+```
+
+### ProxySimpleEventService.java (스프링 AOP 적용 시 삭제할 것)
+```java
+@Primary //같은 타입의 빈이 여러개일 때 우선적으로 가져오도록 함
+@Autowired
+public class ProxySimpleEventService implements EventService {
+
+   @Autowired
+   SimpleEventService simpleEventService;
+
+   @Override
+   public void createEvent() {
+      long begin = System.currentTimeMillis();
+      simpleEventService.createEvent();
+      System.out.println(System.currentTimeMillis() - begin);
+   } 
+
+   @Override
+   public void publishEvent() {
+      long begin = System.currentTimeMillis();
+      simpleEventService.publishEvent();
+      System.out.println(System.currentTimeMillis() - begin);
+   }
+
+}
+
+```
+
+### DemospringApplication.java
+
+- web 안 띄우고 빠르게 실횅하는 설정 (테스트할 때)
+
+```java
+public class DemospringApplication {
+   public static void main(String[] args) {
+      SpringApplication app = new SpringApplication(DemospringApplicaiton.class);
+      app.setWebApplicationType(WebApplicationType.NONE); //web server 실행 X
+      app.run(args);
+      SpringApplication.run(DemospringApplication.class, args);
+   }
+}
+
+```
