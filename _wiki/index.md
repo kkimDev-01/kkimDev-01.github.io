@@ -65,5 +65,7 @@ regenerate: true
     * [[스프링 AOP - 프록시 기반 AOP]]
     * [[스프링 AOP - @AOP]]
     * [[null-safety]]
+  * [[스프링 부트 개념과 활용]]
+    * [[스프링 부트 시작하기]]
 ---
 
